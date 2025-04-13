@@ -14,24 +14,25 @@
     rel="stylesheet" />
   <link rel="stylesheet" href="./css/styles.css" />
   <link rel="portfolio" href="./portfolio.html" />
+
 </head>
 
-<!-- nav section -->
+<!-- header section -->
 
 <body>
   <header class="header-section">
     <div class="display-flex container">
-      <nav class="display-flex">
-        <a class="logo_webstudio link" href="./index.html">web<span class="studio_icon">Studio</span></a>
+      <nav class="display-flex ">
+        <a class="logo_webstudio link " href="./index.html">web<span class="studio_icon">Studio</span></a>
         <ul class="display-flex child">
           <li>
-            <a class="list_item link" href="./index.html">Studio</a>
+            <a class="list_item link nav-link" href="./index.html">Studio</a>
           </li>
           <li>
-            <a class="list_item link" href="./portfolio.html">Portfolio</a>
+            <a class="list_item link " href="./portfolio.html">Portfolio</a>
           </li>
           <li>
-            <a class="list_item link last-li" href="">Contacts</a>
+            <a class="list_item link " href="">Contacts</a>
           </li>
         </ul>
       </nav>
@@ -43,7 +44,7 @@
             <a class="contact_item link" href="mailto:info@devstudio.com">info@devstudio.com</a>
           </li>
           <li>
-            <a class="contact_item link last-li" href="tel:+110001111111">
+            <a class="contact_item link " href="tel:+110001111111">
               +11 (000) 111-11-11</a>
           </li>
         </ul>
@@ -51,7 +52,7 @@
     </div>
   </header>
 
-  <!-- main section -->
+
   <main>
     <!-- title section-->
 
@@ -60,19 +61,19 @@
         <h1 class="title-efectiv-solution">
           Effective Solutions for Your Business
         </h1>
-        <button class="book_service_button" type="button">
-          Order Service
+        <button class="book_service_button " type="button" data-modal-open>Order
+          Service
         </button>
       </div>
     </section>
 
     <!-- about section -->
 
-    <section class="title-section-h">
+    <section class=" title-section-h">
       <div class="container">
         <h2 class="visually-hidden">title</h2>
         <ul class="list display-flex-about-section">
-          <li class="about-section-list">
+          <li>
             <div class="div-icon">
               <svg width="64" height="64">
                 <use href="./images/icons.svg#antenna"></use>
@@ -298,6 +299,7 @@
         </ul>
       </div>
     </section>
+    <!-- costumer section -->
     <section class="section-costumers">
       <div class="container">
         <h2 class="costumer-title">Customers</h2>
@@ -344,8 +346,9 @@
   </main>
   <!-- footer section -->
 
-  <footer class="footer_section">
-    <div class="footer-div">
+  <footer>
+
+    <div class="footer-div container ">
 
       <div class="div-logo-footer">
         <a class="logo_webstudio link" href="./index.html">web
@@ -393,6 +396,16 @@
 
     </div>
   </footer>
+
+  <div class="modal-window is-hidden" data-modal>
+    <div class="inside-modal-window">
+      <button class="button-modal-window" type="button" data-modal-close>
+        <svg width="8" height="8" class="svg-modal-window">
+          <use href="./images/icons.svg#close-buton"></use>
+        </svg> </button>
+    </div>
+
+  </div>
   <script src="./js/modal.js"></script>
 </body>
 
